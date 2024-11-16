@@ -1,19 +1,17 @@
-// Home.jsx
 import { CiGrid41 } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 
-
 function Home() {
   const navigate = useNavigate();
- 
+
   return (
     <div className="relative h-screen w-screen flex justify-center items-center overflow-hidden bg-noise bg-[#FFF5EE] font-['Anonymous_Pro']">
-      <div className="relative border-2 border-black p-10 bg-noise bg-[#FFF5EE] w-[90%] h-[90%] flex flex-col justify-between">
+      <div className="relative border-2 border-black p-10 bg-noise bg-[#FFF5EE] w-[90%] h-[90%] flex flex-col justify-between overflow-y-auto">
         <div>
           <button
             onClick={() => navigate("/Menu")}
-            className="text-4xl text-bold text-black p-5 absolute top-5 right-5 flex space-x-4 z-10 transition-transform ease-in-out">
-            <CiGrid41/>
+            className="text-4xl font-bold text-black p-5 absolute top-5 right-5 z-10 transition-transform ease-in-out">
+            <CiGrid41 />
           </button>
         </div>
         <div>

@@ -16,5 +16,18 @@ html, body {
   a, button, input, textarea, select {
     cursor: none; 
   }
+
+  @media screen and (max-width: 768px) {
+    .works-container {
+      max-height: 90vh; /* Makes the container take at most 90% of the screen height */
+      overflow-y: auto; /* Allows scrolling if content overflows */
+    }
+  
+    .works-content {
+      padding: 10px; /* Adjusts padding to ensure contents stay inside the border */
+    }
+  }
+
+ 
   
   

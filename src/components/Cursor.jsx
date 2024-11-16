@@ -43,7 +43,7 @@ function CustomCursor() {
         zIndex: 9999,
         transition: "transform 100ms ease-out",
       }}
-      className="custom-cursor"
+      className="custom-cursor hidden sm:block"  // Hide on small screens and show on larger screens
     ></div>
   );
 }
